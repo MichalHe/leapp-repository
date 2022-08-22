@@ -19,7 +19,7 @@ from leapp.models import (
     RepositoriesMapping,
     RepositoriesSetupTasks,
     RHUIInfo,
-    RpmTransactionTasks
+    RpmTransactionTasks,
 )
 
 SKIPPED_PKGS_MSG = (

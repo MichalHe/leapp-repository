@@ -13,7 +13,7 @@ from leapp.models import (
     RepositoriesFacts,
     RepositoriesMapping,
     RepositoryData,
-    RepositoryFile
+    RepositoryFile,
 )
 
 

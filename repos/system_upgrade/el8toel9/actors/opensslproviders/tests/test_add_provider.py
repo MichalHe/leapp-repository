@@ -7,7 +7,7 @@ from leapp.libraries.actor.add_provider import (
     _replace,
     APPEND_STRING,
     LEAPP_COMMENT,
-    NotFoundException
+    NotFoundException,
 )
 
 testdata = (

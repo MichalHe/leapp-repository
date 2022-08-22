@@ -14,7 +14,7 @@ from leapp.models import (
     RepositoriesSetupTasks,
     RepositoryData,
     RepositoryFile,
-    TargetRepositories
+    TargetRepositories,
 )
 
 

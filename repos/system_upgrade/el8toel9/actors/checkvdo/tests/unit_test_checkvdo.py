@@ -8,7 +8,7 @@ from leapp.models import (
     VdoConversionInfo,
     VdoConversionPostDevice,
     VdoConversionPreDevice,
-    VdoConversionUndeterminedDevice
+    VdoConversionUndeterminedDevice,
 )
 from leapp.utils.report import is_inhibitor
 

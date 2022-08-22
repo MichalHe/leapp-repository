@@ -10,7 +10,7 @@ from leapp.models import (
     PersistentNetNamesFactsInitramfs,
     RenamedInterface,
     RenamedInterfaces,
-    TargetInitramfsTasks
+    TargetInitramfsTasks,
 )
 from leapp.utils.deprecation import suppress_deprecation
 

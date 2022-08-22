@@ -30,7 +30,7 @@ from leapp.models import (
     SysctlVariable,
     SysctlVariablesFacts,
     User,
-    UsersFacts
+    UsersFacts,
 )
 
 

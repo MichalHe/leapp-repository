@@ -15,7 +15,7 @@ from leapp.models import (
     PartitionEntry,
     PvsEntry,
     SystemdMountEntry,
-    VgsEntry
+    VgsEntry,
 )
 from leapp.utils.report import is_inhibitor
 

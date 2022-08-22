@@ -8,7 +8,7 @@ from leapp.models import (
     StorageInfo,
     TargetUserSpaceInfo,
     UsedTargetRepositories,
-    XFSPresence
+    XFSPresence,
 )
 from leapp.tags import DownloadPhaseTag, IPUWorkflowTag
 

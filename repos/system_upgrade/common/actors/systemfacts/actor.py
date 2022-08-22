@@ -12,7 +12,7 @@ from leapp.models import (
     RepositoriesFacts,
     SELinuxFacts,
     SysctlVariablesFacts,
-    UsersFacts
+    UsersFacts,
 )
 from leapp.tags import FactsPhaseTag, IPUWorkflowTag
 

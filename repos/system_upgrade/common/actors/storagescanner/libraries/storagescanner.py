@@ -15,7 +15,7 @@ from leapp.models import (
     PvsEntry,
     StorageInfo,
     SystemdMountEntry,
-    VgsEntry
+    VgsEntry,
 )
 
 

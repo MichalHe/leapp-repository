@@ -2,10 +2,9 @@ import base64
 import io
 import tarfile
 
-from leapp.exceptions import StopActorExecutionError
 from leapp import reporting
+from leapp.exceptions import StopActorExecutionError
 from leapp.libraries.stdlib import CalledProcessError, run
-
 
 COMMON_REPORT_TAGS = [reporting.Tags.SERVICES, reporting.Tags.TIME_MANAGEMENT]
 
@@ -31,7 +30,7 @@ def write_file(name, content):
 
 def ntp2chrony(root, ntp_conf, step_tickers):
     # need to skip these on pylint to avoid "function already defined" if we move to the top of file
-    from leapp.libraries.actor import ntp2chrony  # pylint: disable=import-outside-toplevel
+    from leapp.libraries.actor import ntp2chrony
 
     try:
         ntp_configuration = ntp2chrony.NtpConfiguration(root, ntp_conf, step_tickers)

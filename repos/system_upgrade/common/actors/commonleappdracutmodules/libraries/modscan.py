@@ -12,7 +12,6 @@ from leapp.models import (
 )
 from leapp.utils.deprecation import suppress_deprecation
 
-
 _REQUIRED_PACKAGES = [
     'binutils',
     'cifs-utils',

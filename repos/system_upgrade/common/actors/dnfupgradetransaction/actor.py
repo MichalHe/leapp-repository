@@ -11,7 +11,7 @@ from leapp.models import (
     StorageInfo,
     TargetUserSpaceInfo,
     TransactionCompleted,
-    UsedTargetRepositories
+    UsedTargetRepositories,
 )
 from leapp.tags import IPUWorkflowTag, RPMUpgradePhaseTag
 

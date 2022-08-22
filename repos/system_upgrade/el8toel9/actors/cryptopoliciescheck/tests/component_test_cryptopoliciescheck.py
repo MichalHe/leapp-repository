@@ -4,7 +4,7 @@ from leapp.models import (
     CustomCryptoPolicy,
     CustomCryptoPolicyModule,
     Report,
-    TargetUserSpacePreupgradeTasks
+    TargetUserSpacePreupgradeTasks,
 )
 
 

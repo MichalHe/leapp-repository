@@ -1,7 +1,7 @@
 from leapp.libraries.actor.private_firewalldcollectusedobjectnames import (
     get_used_services,
     is_policy_in_use,
-    is_zone_in_use
+    is_zone_in_use,
 )
 
 

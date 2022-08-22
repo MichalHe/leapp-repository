@@ -9,7 +9,7 @@ from leapp.libraries.actor.pes_event_parsing import (
     Package,
     parse_entry,
     parse_packageset,
-    parse_pes_events
+    parse_pes_events,
 )
 
 CUR_DIR = os.path.dirname(os.path.abspath(__file__))

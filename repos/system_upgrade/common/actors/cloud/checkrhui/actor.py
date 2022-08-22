@@ -13,7 +13,7 @@ from leapp.models import (
     RequiredTargetUserspacePackages,
     RHUIInfo,
     RpmTransactionTasks,
-    TargetUserSpacePreupgradeTasks
+    TargetUserSpacePreupgradeTasks,
 )
 from leapp.reporting import create_report, Report
 from leapp.tags import FactsPhaseTag, IPUWorkflowTag

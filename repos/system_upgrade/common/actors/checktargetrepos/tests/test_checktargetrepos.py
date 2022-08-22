@@ -12,7 +12,7 @@ from leapp.models import (
     Report,
     RepositoryData,
     RHELTargetRepository,
-    TargetRepositories
+    TargetRepositories,
 )
 from leapp.utils.report import is_inhibitor
 

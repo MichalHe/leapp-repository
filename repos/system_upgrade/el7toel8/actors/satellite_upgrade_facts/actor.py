@@ -11,7 +11,7 @@ from leapp.models import (
     RepositoriesSetupTasks,
     RpmTransactionTasks,
     SatelliteFacts,
-    SatellitePostgresqlFacts
+    SatellitePostgresqlFacts,
 )
 from leapp.tags import FactsPhaseTag, IPUWorkflowTag
 

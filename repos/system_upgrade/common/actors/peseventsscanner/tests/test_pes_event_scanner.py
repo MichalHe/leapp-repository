@@ -13,7 +13,7 @@ from leapp.libraries.actor.pes_events_scanner import (
     Package,
     process,
     reporting,
-    TransactionConfiguration
+    TransactionConfiguration,
 )
 from leapp.libraries.common.testutils import create_report_mocked, CurrentActorMocked, produce_mocked
 from leapp.models import (
@@ -28,7 +28,7 @@ from leapp.models import (
     RepositoryData,
     RepositoryFile,
     RHUIInfo,
-    RPM
+    RPM,
 )
 
 

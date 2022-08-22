@@ -6,7 +6,7 @@ from leapp.models import (
     DetectedDeviceOrDriver,
     DeviceDriverDeprecationData,
     PCIDevice,
-    PCIDevices
+    PCIDevices,
 )
 
 # Regex to capture Vendor, Device and SVendor and SDevice values

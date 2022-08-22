@@ -4,7 +4,7 @@ from leapp.libraries.actor.opensslconfigcheck import (
     check_crypto_policies,
     check_default_modules,
     check_duplicate_extensions,
-    check_min_max_protocol
+    check_min_max_protocol,
 )
 from leapp.libraries.stdlib import api
 from leapp.models import OpenSslConfig, Report

@@ -1,7 +1,6 @@
 from leapp.exceptions import StopActorExecutionError
 from leapp.libraries.stdlib import api, CalledProcessError, run
-from leapp.models import InitrdIncludes  # deprecated
-from leapp.models import InstalledTargetKernelVersion, TargetInitramfsTasks
+from leapp.models import InitrdIncludes, InstalledTargetKernelVersion, TargetInitramfsTasks
 from leapp.utils.deprecation import suppress_deprecation
 
 DRACUT_DIR = '/usr/lib/dracut/modules.d/'

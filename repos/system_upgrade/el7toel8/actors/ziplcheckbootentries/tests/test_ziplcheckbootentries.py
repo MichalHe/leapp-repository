@@ -6,7 +6,7 @@ from leapp.libraries.actor.ziplcheckbootentries import (
     extract_kernel_version,
     inhibit_if_entries_share_kernel_version,
     inhibit_if_invalid_zipl_configuration,
-    inhibit_if_multiple_zipl_rescue_entries_present
+    inhibit_if_multiple_zipl_rescue_entries_present,
 )
 from leapp.libraries.common.config import architecture
 from leapp.libraries.common.testutils import create_report_mocked, CurrentActorMocked

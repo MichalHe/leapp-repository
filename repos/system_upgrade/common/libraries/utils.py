@@ -35,7 +35,7 @@ def parse_config(cfg=None, strict=True):
             parser.read_file(cfg)
     elif cfg:
         # Python 2
-        from cStringIO import StringIO  # pylint: disable=import-outside-toplevel
+        from cStringIO import StringIO
         if isinstance(cfg, six.string_types):
             parser.readfp(StringIO(cfg))  # pylint: disable=deprecated-method
         else:

@@ -3,15 +3,15 @@ from leapp.libraries.actor import userspacegen
 from leapp.libraries.common.config import get_env, version
 from leapp.models import (
     CustomTargetRepositoryFile,
-    RHSMInfo,
-    RHUIInfo,
     Report,
     RepositoriesMapping,
     RequiredTargetUserspacePackages,  # deprecated
+    RHSMInfo,
+    RHUIInfo,
     StorageInfo,
     TargetRepositories,
-    TargetUserSpacePreupgradeTasks,
     TargetUserSpaceInfo,
+    TargetUserSpacePreupgradeTasks,
     TMPTargetRepositoriesFacts,  # deprecated all the time
     UsedTargetRepositories,
     XFSPresence,

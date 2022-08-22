@@ -8,7 +8,7 @@ from leapp.models import (
     RepositoriesSetupTasks,
     RPM,
     RpmTransactionTasks,
-    SatelliteFacts
+    SatelliteFacts,
 )
 from leapp.snactor.fixture import current_actor_context
 

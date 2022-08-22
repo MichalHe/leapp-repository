@@ -8,7 +8,7 @@ from leapp.libraries.actor.opensslconfigcheck import (
     _openssl_reachable_block,
     _openssl_reachable_block_root,
     _openssl_reachable_key,
-    _openssl_reachable_path
+    _openssl_reachable_path,
 )
 from leapp.models import OpenSslConfig, OpenSslConfigBlock, OpenSslConfigPair
 

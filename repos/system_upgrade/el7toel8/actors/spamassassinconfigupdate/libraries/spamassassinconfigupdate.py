@@ -1,7 +1,7 @@
 from leapp.libraries.actor import (
     spamassassinconfigupdate_backup,
     spamassassinconfigupdate_spamc,
-    spamassassinconfigupdate_spamd
+    spamassassinconfigupdate_spamd,
 )
 
 

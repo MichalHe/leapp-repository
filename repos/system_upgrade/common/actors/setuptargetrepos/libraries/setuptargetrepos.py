@@ -12,7 +12,7 @@ from leapp.models import (
     RHUIInfo,
     SkippedRepositories,
     TargetRepositories,
-    UsedRepositories
+    UsedRepositories,
 )
 
 

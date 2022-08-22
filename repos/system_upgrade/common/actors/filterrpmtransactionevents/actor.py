@@ -3,7 +3,7 @@ from leapp.models import (
     FilteredRpmTransactionTasks,
     InstalledRedHatSignedRPM,
     PESRpmTransactionTasks,
-    RpmTransactionTasks
+    RpmTransactionTasks,
 )
 from leapp.tags import ChecksPhaseTag, IPUWorkflowTag
 

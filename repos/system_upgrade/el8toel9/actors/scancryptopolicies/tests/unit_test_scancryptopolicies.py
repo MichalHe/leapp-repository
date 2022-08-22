@@ -8,7 +8,7 @@ from leapp.libraries.actor.scancryptopolicies import (
     _get_name_from_file,
     find_rpm_untracked,
     read_current_policy,
-    read_policy_dirs
+    read_policy_dirs,
 )
 from leapp.models import CustomCryptoPolicy, CustomCryptoPolicyModule
 

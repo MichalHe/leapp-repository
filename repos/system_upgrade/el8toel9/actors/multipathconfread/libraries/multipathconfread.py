@@ -9,7 +9,7 @@ from leapp.models import (
     InstalledRedHatSignedRPM,
     MultipathConfFacts8to9,
     MultipathConfig8to9,
-    TargetUserSpaceUpgradeTasks
+    TargetUserSpaceUpgradeTasks,
 )
 
 _regexes = ('vendor', 'product', 'revision', 'product_blacklist', 'devnode',

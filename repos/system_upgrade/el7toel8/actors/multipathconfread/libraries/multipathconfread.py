@@ -10,7 +10,7 @@ from leapp.models import (
     MultipathConfFacts,
     MultipathConfig,
     MultipathConfigOption,
-    TargetUserSpaceUpgradeTasks
+    TargetUserSpaceUpgradeTasks,
 )
 
 

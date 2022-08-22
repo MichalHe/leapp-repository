@@ -8,19 +8,19 @@ from leapp.libraries.common import dnfplugin, mounting, overlaygen, repofileutil
 from leapp.libraries.common.config import get_env, get_product_type
 from leapp.libraries.common.config.version import get_target_major_version
 from leapp.libraries.stdlib import api, CalledProcessError, config, run
-from leapp.models import RequiredTargetUserspacePackages  # deprecated
-from leapp.models import TMPTargetRepositoriesFacts  # deprecated
 from leapp.models import (
     CustomTargetRepositoryFile,
+    RequiredTargetUserspacePackages,  # deprecated
     RHSMInfo,
     RHUIInfo,
     StorageInfo,
     TargetRepositories,
     TargetUserSpaceInfo,
     TargetUserSpacePreupgradeTasks,
+    TMPTargetRepositoriesFacts,  # deprecated
     UsedTargetRepositories,
     UsedTargetRepository,
-    XFSPresence
+    XFSPresence,
 )
 from leapp.utils.deprecation import suppress_deprecation
 

@@ -9,7 +9,7 @@ from leapp.models import (
     RHUIInfo,
     SkippedRepositories,
     TargetRepositories,
-    UsedRepositories
+    UsedRepositories,
 )
 from leapp.tags import FactsPhaseTag, IPUWorkflowTag
 
