@@ -1,10 +1,12 @@
 import os
+import glob
 import shutil
 import tempfile
 
 import pytest
 
 from leapp.exceptions import StopActorExecutionError
+from leapp.libraries.actor import readopensshconfig
 from leapp.libraries.actor.readopensshconfig import line_empty, parse_config, produce_config
 from leapp.models import OpenSshConfig, OpenSshPermitRootLogin
 
@@ -155,28 +157,35 @@ def test_parse_config_empty():
     assert output.protocol is None
 
 
-def test_parse_config_include():
+def test_parse_config_include(monkeypatch):
     """ This already require some files to touch """
 
-    # python2 compatibility :/
-    dirpath = tempfile.mkdtemp()
+    config_contents = {
+        '/etc/ssh/sshd_config': [
+            "Include /path/*.conf"
+        ],
+        '/path/my.conf': [
+            'Subsystem sftp internal-sftp'
+        ],
+        '/path/another.conf': [
+            'permitrootlogin no'
+        ]
+    }
 
-    config = [
-        "Include {}/*.conf".format(dirpath)
-    ]
+    primary_config_path = '/etc/ssh/sshd_config'
+    primary_config_contents = config_contents[primary_config_path]
 
-    try:
-        # Prepare tmp directory with some included configuration snippets
-        my_path = os.path.join(dirpath, "my.conf")
-        with open(my_path, "w") as f:
-            f.write('Subsystem sftp internal-sftp')
-        other_path = os.path.join(dirpath, "another.conf")
-        with open(other_path, "w") as f:
-            f.write('permitrootlogin no')
+    def glob_mocked(pattern):
+        assert pattern == '/path/*.conf'
+        return ['/path/my.conf', '/path/another.conf']
 
-        output = parse_config(config)
-    finally:
-        shutil.rmtree(dirpath)
+    def read_config_mocked(path):
+        return config_contents[path]
+
+    monkeypatch.setattr(glob, 'glob', glob_mocked)
+    monkeypatch.setattr(readopensshconfig, 'read_sshd_config', read_config_mocked)
+
+    output = parse_config(primary_config_contents)
 
     assert isinstance(output, OpenSshConfig)
     assert len(output.permit_root_login) == 1
